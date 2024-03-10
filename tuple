@@ -1,4 +1,4 @@
-# A tuple containing the names of my five favorite books
+# Tuple containing the names of my five favorite books
 favorite_books = (
         "Rock Chick series by Kristen Ashley",
         "Things Fall Apart by Chinua Achebe",
