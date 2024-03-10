@@ -15,4 +15,3 @@ person_info['favorite_color'] = favorite_color
 print("Person's Information:")
 for key, value in person_info.items():
     print(f"{key.capitalize()}: {value}")
-    
