@@ -1,25 +1,20 @@
-#Abstraction from abc import ABC, abstractmethod
+#Abstraction
+from abc import ABC, abstractmethod
+
 class Shape(ABC):
     @abstractmethod
     def area(self):
         pass
-
-    @abstractmethod
-    def perimeter(self):
-        pass
-
+    
     #Class, Object, Encapsulation
     class Circle(Shape):
         def __init__(self, radius):
-            self.__radius = radius
-
-        def area(self):
-            return 3.14 * self.__radius * self.__radius
-
-        def perimeter(self):
-            return 2 * 3.14 * self.__radius
-        
-        #Inheritance 
+            self.__radius = radius #Encapsulated attribute
+            
+            def area(self):
+                return 3.14 * self.__radius * self.__radius
+    
+#Inheritance 
         class Square(Shape):
             def __init__(self, side):
                 self.__side = side
